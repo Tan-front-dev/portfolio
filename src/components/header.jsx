@@ -107,7 +107,7 @@ function Header() {
                 </a>
               </li>
               <li>
-                <a href="https://cloudhq.net/s/edae27f65f6c91" target="_blank">
+                <a href="mailto:ertazatanbir@gmail.com" target="_blank">
                   <i className="fa-solid fa-at"></i>
                 </a>
               </li>
@@ -156,7 +156,7 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href="https://cloudhq.net/s/edae27f65f6c91" target="_blank">
+            <a href="mailto:ertazatanbir@gmail.com" target="_blank">
               <i className="fa-solid fa-at"></i>
             </a>
           </li>
