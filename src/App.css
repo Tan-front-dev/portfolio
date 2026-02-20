@@ -736,8 +736,8 @@ input:last-child::placeholder{
         grid-template-columns: repeat(4, 1fr);
     }
 
-    /* .input{
+    .input{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    } */
+    }
 }
