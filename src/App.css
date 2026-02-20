@@ -8,6 +8,7 @@ html{
     --main-font: "Syne", sans-serif;
     --primary-font: sans-serif;
     --primary-background-color: rgb(10, 10, 10);
+    --input-background-color: rgb(15, 15, 15);
     --primary-text-color: rgb(210, 210, 210);
     --dark-text-color: rgb(130, 130, 130);
     --white-color: white;
@@ -93,7 +94,7 @@ p{
 }
 
 .extra-info{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .extra-info h6{
@@ -107,11 +108,11 @@ p{
 }
 
 .extra-info h6:nth-of-type(2){
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .links{
-    margin: 16px 0;
+    margin: 10px 0 15px 0;
     display: flex;
     gap: 15px;
 }
@@ -125,22 +126,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s linear;
 }
 
 .links li a i{
-    color: transparent;
-    -webkit-text-stroke: 1px var(--dark-text-color);
+    color: var(--dark-text-color);;
 }
 
-.proposal-button{
-    background: var(--white-color);
+.w-100{
     width: 100%;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 0;
-    margin-bottom: 10px;
-    font-family: var(--main-font);
-    font-size: 14px;
 }
 
 .inside-menu{
@@ -189,7 +183,7 @@ p{
 .menu-options a{
     color: var(--white-color);
     text-decoration: none;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     font-size: 0.9rem;
 }
 
@@ -250,11 +244,15 @@ p{
     letter-spacing: 0.5px;
     font-family: var(--main-font);
     font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
 }
 
 .b1{
     background: var(--white-color);
     color: var(--black-color);
+    border: 1px solid var(--white-color);
 }
 
 .b2{
@@ -445,6 +443,14 @@ p{
 
 }
 
+.tool img{
+    width: 50px;
+}
+
+.tool-box .tool:first-child img{
+    width: 40px;
+}
+
 .tool{
     display: flex;
     flex-direction: column;
@@ -579,7 +585,7 @@ p{
 
 .contact-form input, textarea{
     border: none;
-    background: var(--primary-background-color);
+    background: var(--input-background-color);
     padding: 12px;
     border-radius: 5px;
     outline: none;
@@ -600,15 +606,6 @@ p{
 
 input:last-child::placeholder{
     font-family: var(--primary-font);
-}
-
-.form-button{
-    width: 150px;
-    padding: 11px 0;
-    border-radius: 7px;
-    border: none;
-    font-size: 15px;
-    font-family: var(--main-font);
 }
 
 .top-btn{
@@ -676,7 +673,7 @@ input:last-child::placeholder{
         width: 22vw;
     }
     .introduction h1{
-        max-width: 400px;
+        max-width: 550px;
     }
     .extra-intro{
         display: flex;
@@ -688,9 +685,9 @@ input:last-child::placeholder{
     .vertical-menu{
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         position: fixed;
-        top: 12rem;
+        top: 11.5rem;
         right: 1rem;
         border: 1px solid var(--border-color);
         padding: 10px;
@@ -739,5 +736,21 @@ input:last-child::placeholder{
     .input{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .links li:hover{
+        border-color: var(--white-color);
+    }
+    .links li:hover a i{
+        color: var(--white-color);
+    }
+    .b1:hover{
+        background: transparent;
+        color: var(--white-color);
+        border-color: var(--border-color);
+    }
+    .b2:hover{
+        background: var(--white-color);
+        color: var(--black-color);
+        border-color: var(--white-color);
     }
 }

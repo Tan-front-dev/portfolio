@@ -13,7 +13,7 @@ return(
             <div className="text-area">
             <textarea placeholder="Write your message..." rows={6}></textarea>
             </div>
-            <button className="form-button" type="submit">Send Message</button>
+            <button className="btn b1" type="submit" >Send Message</button>
         </form>
     </div>
 )

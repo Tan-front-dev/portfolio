@@ -25,9 +25,9 @@ function VerticalMenu() {
       <a href="#resume" className={active === "resume" ? "active" : ""} onClick={() => handleClick("resume")}>
         <i className="fa-regular fa-file-lines"></i>
       </a>
-      <a href="#reviews" className={active === "reviews" ? "active" : ""} onClick={() => handleClick("reviews")}>
+      {/* <a href="#reviews" className={active === "reviews" ? "active" : ""} onClick={() => handleClick("reviews")}>
         <i className="fa-regular fa-message"></i>
-      </a>
+      </a> */}
       <a href="#contact" className={active === "contact" ? "active" : ""} onClick={() => handleClick("contact")}>
         <i className="fa-regular fa-envelope"></i>
       </a>

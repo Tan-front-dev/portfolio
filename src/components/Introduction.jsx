@@ -1,25 +1,28 @@
+import Resume from "../documents/ErtazaTanbirResume.pdf"
+import CoverLetter from "../documents/ErtazaTanbirCoverLetter.pdf"
+
 function Introduction(){
 
     return(
         <div className="introduction">
             <span className="span-box"><i className="fa-solid fa-star"></i> Introduction</span>
-            <h1>I'm David UI/UX Designer And Frontend Developer.</h1>
+            <h1>Hi, I'm Ertaza Tanbir Frontend Developer | React Enthusiast</h1>
             <div className="intro-btn">
-                <button className="btn b1">My Projects</button>
-                <button className="btn b2">Download CV</button>
+                <a href={Resume} download className="btn b1">Download Resume</a>
+                <a href={CoverLetter} download className="btn b2">Download Cover Letter</a>
             </div>
             <div className="extra-intro">
                 <div className="intro-box">
-                    <h1>30+</h1>
-                    <span>Happy Clients</span>
+                    <h1>10+</h1>
+                    <span>Personal Projects</span>
                 </div>
                 <div className="intro-box">
-                    <h1>05+</h1>
-                    <span>Years of Experience</span>
+                    <h1>2+</h1>
+                    <span>Year Learning & Building</span>
                 </div>
                 <div className="intro-box">
-                    <h1>50+</h1>
-                    <span>Projects Done</span>
+                    <h1>100+</h1>
+                    <span>Problems Solved</span>
                 </div>
             </div>
         </div>

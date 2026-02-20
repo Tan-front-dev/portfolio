@@ -6,43 +6,43 @@ function Services(){
         <div className="service-demo">
         <div className="service">
             <div className="service-head">
-                <h4>Brand Indentity</h4>
+                <h4>Frontend Web Development</h4>
                 <i className="fa-solid fa-palette"></i>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sunt sequi consectetur porro corrupti officia non eveniet.</p>
-            <strong>32 PROJECTS</strong>
+            <p>Building responsive websites using HTML, CSS, JavaScript, and modern frameworks.</p>
+            <strong>10 PROJECTS</strong>
         </div>
         <div className="service">
             <div className="service-head">
-                <h4>UI/UX Design</h4>
+                <h4>React Application Development</h4>
                 <i className="fa-solid fa-layer-group"></i>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sunt sequi consectetur porro corrupti officia non eveniet.</p>
-            <strong>47 PROJECTS</strong>
+            <p>Creating dynamic and interactive web applications using React.</p>
+            <strong>15 PROJECTS</strong>
         </div>
         <div className="service">
             <div className="service-head">
-                <h4>Web Development</h4>
+                <h4>Responsive UI Implementation</h4>
                 <i className="fa-solid fa-globe"></i>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sunt sequi consectetur porro corrupti officia non eveniet.</p>
-            <strong>58 PROJECTS</strong>
+            <p>Designing mobile-friendly layouts using CSS</p>
+            <strong>10 PROJECTS</strong>
         </div>
         <div className="service">
             <div className="service-head">
-                <h4>Mobile App Design</h4>
+                <h4>API Integration</h4>
                 <i className="fa-solid fa-mobile-screen"></i>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sunt sequi consectetur porro corrupti officia non eveniet.</p>
-            <strong>21 PROJECTS</strong>
+            <p>Connecting frontend applications with REST APIs and handling data dynamically.</p>
+            <strong>5 PROJECTS</strong>
         </div>
         <div className="service">
             <div className="service-head">
-                <h4>Product Launch Strategy</h4>
+                <h4>Performance Optimization</h4>
                 <i className="fa-solid fa-rocket"></i>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sunt sequi consectetur porro corrupti officia non eveniet.</p>
-            <strong>15 PROJECTS</strong>
+            <p>Improving website speed, responsiveness, and user experience.</p>
+            <strong>5 PROJECTS</strong>
         </div>
         </div>
     </div>

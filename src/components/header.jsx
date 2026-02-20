@@ -54,69 +54,75 @@ function Header() {
       <div className="menu-logo" onClick={openMenu}>
         <i className="fa-solid fa-bars"></i>
       </div>
-       <nav>
-          <div className={`inside-menu ${menu ? "active" : ""}`} ref={menuRef}>
-            <div className="menu-head">
-              <h3>Menu</h3>
-              <i className="fa-solid fa-xmark" onClick={closeMenu}></i>
-            </div>
-            <div className="menu-options">
-              <a href="#home">
-                <i className="fa-regular fa-house"></i>
-                Home
-              </a>
-              <a href="#project">
-                <i className="fa-solid fa-briefcase"></i>
-                Projects
-              </a>
-              <a href="#about">
-                <i className="fa-regular fa-user"></i>
-                About
-              </a>
-              <a href="#services">
-                <i className="fa-solid fa-gear"></i>
-                Services
-              </a>
-              <a href="#resume">
-                <i className="fa-regular fa-file-lines"></i>
-                Resume
-              </a>
-              <a href="#reviews">
+      <nav>
+        <div className={`inside-menu ${menu ? "active" : ""}`} ref={menuRef}>
+          <div className="menu-head">
+            <h3>Menu</h3>
+            <i className="fa-solid fa-xmark" onClick={closeMenu}></i>
+          </div>
+          <div className="menu-options">
+            <a href="#home">
+              <i className="fa-regular fa-house"></i>
+              Home
+            </a>
+            <a href="#project">
+              <i className="fa-solid fa-briefcase"></i>
+              Projects
+            </a>
+            <a href="#about">
+              <i className="fa-regular fa-user"></i>
+              About
+            </a>
+            <a href="#services">
+              <i className="fa-solid fa-gear"></i>
+              Services
+            </a>
+            <a href="#resume">
+              <i className="fa-regular fa-file-lines"></i>
+              Resume
+            </a>
+            {/* <a href="#reviews">
                 <i className="fa-regular fa-message"></i>
                 Reviews
-              </a>
-              <a href="#contact">
-                <i className="fa-regular fa-envelope"></i>
-                Contact
-              </a>
-            </div>
-            <div className="socials">
-              <h4>Socials</h4>
-              <div className="links menu">
-                <li>
-                  <a href="#">
-                    <i className="fa-brands fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa-brands fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa-brands fa-youtube"></i>
-                  </a>
-                </li>
-              </div>
+              </a> */}
+            <a href="#contact">
+              <i className="fa-regular fa-envelope"></i>
+              Contact
+            </a>
+          </div>
+          <div className="socials">
+            <h4>Socials</h4>
+            <div className="links menu">
+              <li>
+                <a href="https://github.com/Tan-front-dev" target="_blank">
+                  <i className="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ertaza-tanbir-5645673b0/"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://cloudhq.net/s/edae27f65f6c91" target="_blank">
+                  <i className="fa-solid fa-at"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/ertaza.tanbir"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
       <div className="header">
         <div className="info">
           <div className="name">
@@ -133,31 +139,34 @@ function Header() {
           <h6>Specialization:</h6>
           <h3>Frontend Developer | React Enthusiast</h3>
           <h6>Based in:</h6>
-          <h3>Based In Los Angeles, CA</h3>
+          <h3>Sherpur Upazila, Rajshahi, Bangladesh (Open to Remote Work)</h3>
         </div>
         <div className="links">
           <li>
-            <a href="#">
-              <i className="fa-brands fa-facebook-f"></i>
+            <a href="https://github.com/Tan-front-dev" target="_blank">
+              <i className="fa-brands fa-github"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/ertaza-tanbir-5645673b0/"
+              target="_blank"
+            >
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i className="fa-brands fa-twitter"></i>
+            <a href="https://cloudhq.net/s/edae27f65f6c91" target="_blank">
+              <i className="fa-solid fa-at"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i className="fa-brands fa-youtube"></i>
+            <a href="https://www.facebook.com/ertaza.tanbir" target="_blank">
+              <i className="fa-brands fa-facebook-f"></i>
             </a>
           </li>
         </div>
-        <button className="proposal-button">Let's Work!</button>
+        <button className="btn b1 w-100">Let's Work!</button>
         {isVisibility && (
           <button className="top-btn" onClick={scrollToTop}>
             <i className="fa-solid fa-arrow-up"></i>
