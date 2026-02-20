@@ -1,0 +1,744 @@
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --border-color: rgb(50, 50, 50);
+    --main-font: "Syne", sans-serif;
+    --primary-font: sans-serif;
+    --primary-background-color: rgb(10, 10, 10);
+    --primary-text-color: rgb(210, 210, 210);
+    --dark-text-color: rgb(130, 130, 130);
+    --white-color: white;
+    --black-color: black;
+    --menu-color: rgb(20, 20, 20);
+    --icon-color: rgb(0, 212, 35);
+    --star-color: gold;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: var(--main-font);
+    background: var(--black-color);
+    color: var(--white-color);
+    position: relative;
+    margin: 15px;
+}
+
+h1{
+    margin-top: 10px;
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+p{
+    color: var(--primary-text-color);
+    line-height: 1.5;
+    font-size: 0.93rem;
+}
+
+.header{
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 12px 16px;
+    background: var(--primary-background-color);
+}
+
+
+.menu-logo{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-background-color);
+}
+
+.menu-logo i{
+    font-size: 0.8rem;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.name h2{
+    font-size: 1.7rem;
+}
+
+.role h4{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.header-image img{
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.extra-info{
+    margin-top: 20px;
+}
+
+.extra-info h6{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.extra-info h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.extra-info h6:nth-of-type(2){
+    margin-top: 15px;
+}
+
+.links{
+    margin: 16px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.links li{
+    list-style-type: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--dark-text-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links li a i{
+    color: transparent;
+    -webkit-text-stroke: 1px var(--dark-text-color);
+}
+
+.proposal-button{
+    background: var(--white-color);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+}
+
+.inside-menu{
+    background: var(--menu-color);
+    padding: 10px 25px;
+    width: 76vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all 0.3s linear;
+}
+
+.inside-menu.active{
+    transform: translateX(0);
+}
+
+.menu-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.menu-head i{
+    width: 22px;
+    height: 22px;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: border 0.2s linear;
+    border: 1px solid var(--border-color);
+}
+
+.menu-head h3{
+    font-size: 1.25rem;
+}
+
+.menu-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-options a{
+    color: var(--white-color);
+    text-decoration: none;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+}
+
+.menu-options a i{
+    margin-right: 10px;
+}
+
+.links.menu{
+    margin-top: 8px;
+}
+
+.links.menu li{
+    width: 28px;
+    height: 28px;
+}
+
+.links.menu li a i{
+    font-size: 15px;
+}
+
+.socials{
+    margin-top: 4rem;
+}
+
+
+.introduction{
+    margin-top: 5rem;
+    margin-bottom: 3.5rem;
+}
+
+.span-box{
+    border: 1px solid var(--border-color);
+    width: 115px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.span-box i{
+    font-size: 0.65rem;
+}
+
+.intro-btn{
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+}
+
+.btn{
+    border: none;
+    padding: 9px 16px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    font-family: var(--main-font);
+    font-size: 14px;
+}
+
+.b1{
+    background: var(--white-color);
+    color: var(--black-color);
+}
+
+.b2{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border: 1px solid var(--border-color);
+}
+
+.extra-intro{
+    margin-top: 3.5rem;
+}
+
+.intro-box{
+    border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 28px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.intro-box h1{
+    font-weight: 500;
+    margin: 0;
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+}
+
+.projects h1{
+    margin-bottom: 1.5rem; 
+}
+
+.projects-demo{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project{
+    position: relative;
+}
+
+.project-detail{
+    position: absolute;
+    bottom: 16px;
+    left: 8px;
+}
+
+.detail{
+    font-size: 13px;
+    background: var(--black-color);
+    margin-right: 8px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.about{
+    margin: 5rem 0;
+}
+
+.about h1{
+    margin-bottom: 10px;
+}
+
+.about-para{
+    margin-bottom: 15px;
+}
+
+.services h1{
+    margin-bottom: 1.5rem;
+}
+
+.service{
+    border: 1px solid var(--border-color);
+    padding: 22px;
+    margin-bottom: 1.4rem;
+    border-radius: 10px;
+}
+
+
+.service-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.service-head i{
+    color: var(--icon-color);
+}
+
+.service p{
+    margin-bottom: 12px;
+}
+
+.service strong{
+    font-family: var(--primary-font);
+    font-size: 0.7rem;
+    color: var(--dark-text-color);
+}
+
+.services{
+    margin-bottom: 5rem;
+}
+
+.resume h1{
+    margin-bottom: 1rem;
+}
+
+.education{
+    margin-top: 2.2rem;
+}
+
+.education h2{
+    margin-bottom: 1.5rem;
+}
+
+.education-box{
+    position: relative;
+    border-left: 1px solid var(--border-color);
+    padding: 0 20px;
+    padding-bottom: 1.8rem;
+}
+
+.education-box:last-child{
+    padding-bottom: 0;
+}
+
+.education-box::before{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--dark-text-color);
+    top: 7px;
+    left: -7px;
+}
+
+.e-year{
+    font-size: 0.75rem;
+    font-family: var(--primary-font);
+    color: var(--dark-text-color);
+}
+
+.e-course{
+    font-weight: 600;
+}
+
+.e-institute{
+    margin-bottom: 5px;
+}
+
+.e-institute strong{
+    color: var(--white-color);
+}
+
+.education-box p{
+    font-size: 0.9rem;
+}
+
+.w-exp{
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.tools{
+    margin-top: 3rem;
+}
+
+.tools h2{
+    margin-bottom: 1.2rem;
+}
+
+.tool-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.tool{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--border-color);
+    padding: 20px 0;
+    border-radius: 5px;
+    
+}
+
+.tool span{
+    font-weight: 600;
+}
+
+.reviews{
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+.reviews h1{
+    margin-bottom: 2.2rem;
+}
+
+.review-box img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.review-box{
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.review-name{
+    font-size: 1.12rem;
+}
+
+.position{
+    font-size: 0.88rem;
+    color: var(--dark-text-color);
+}
+
+.rating{
+    margin: 5px 0;
+}
+
+.rating  i{
+    color: var(--star-color);
+    font-size: 0.88rem;
+    margin-right: 4px;
+}
+
+.review{
+    font-size: 0.88rem;
+    color: var(--primary-text-color);
+    margin-bottom: 15px;
+}
+
+.review-project{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--dark-text-color);
+    font-size: 0.92rem;
+}
+
+.change-btn{
+    margin-top: 1.8rem;
+}
+
+.review-btn{
+    color: var(--white-color);
+    background: transparent;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-right: 13px;
+    border: 1px solid var(--border-color);
+}
+
+.review-content.next{
+    animation: nextReview 0.3s linear ;
+}
+
+.review-content.prev{
+    animation: previousReview 0.3s linear;
+}
+
+@keyframes nextReview{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes previousReview{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contact{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.contact h1{
+    margin-bottom: 1.6rem;
+}
+
+.input, .text-area{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-bottom: 17px;
+}
+
+
+.contact-form input, textarea{
+    border: none;
+    background: var(--primary-background-color);
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+    color: var(--white-color);
+    font-size: 15px;
+    font-family: var(--main-font);
+}
+
+.contact-form textarea:focus,input:focus{
+    outline: 2px solid var(--border-color)
+}
+
+.contact-form textarea::placeholder,input::placeholder{
+    font-size: 14.5px;
+    font-family: var(--main-font);
+    color: var(--primary-text-color);
+}
+
+input:last-child::placeholder{
+    font-family: var(--primary-font);
+}
+
+.form-button{
+    width: 150px;
+    padding: 11px 0;
+    border-radius: 7px;
+    border: none;
+    font-size: 15px;
+    font-family: var(--main-font);
+}
+
+.top-btn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: var(--black-color);
+    color: var(--white-color);
+    padding: 11px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    z-index: 100;
+    font-size: 15px;
+}
+
+.vertical-menu{
+    display: none;
+}
+
+
+@media (min-width:768px){
+    html{
+        font-size: 17px;
+    }
+    .inside-menu{
+        width: 55vw;
+    }
+}
+
+@media (min-width:1024px){
+    html{
+        font-size: 18px;
+    }
+    .header{
+        width: 320px;
+        position: fixed;
+    }
+
+    .name h2{
+    font-size: 1.55rem;
+    }
+    .role h4{
+    font-size: 0.8rem;
+    font-weight: 600;
+    }
+
+    .extra-info h6{
+    font-size: 0.7rem;
+    font-weight: 600;
+    }
+
+    .extra-info h3{
+    font-size: 0.9rem;
+    font-weight: 600;
+    }
+
+    .body{
+        display: flex;
+        gap: 1.8rem;
+    }
+    .body > div:last-child{
+        margin-left: 1.8rem;
+    }
+    .inside-menu{
+        width: 22vw;
+    }
+    .introduction h1{
+        max-width: 400px;
+    }
+    .extra-intro{
+        display: flex;
+        gap: 20px;
+    }
+    .intro-box{
+        padding: 20px 0;
+    }
+    .vertical-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: fixed;
+        top: 12rem;
+        right: 1rem;
+        border: 1px solid var(--border-color);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .vertical-menu a{
+        color: var(--dark-text-color);
+        font-size: 0.9rem;
+    }
+
+    .vertical-menu a.active{
+        color: var(--white-color);
+    }
+
+    .top-btn{
+        display: none;
+    }
+
+    .main{
+        margin-left: 18rem;
+    }
+
+    .projects-demo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .service-demo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    .qualifications{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        align-items: baseline;
+    }
+
+    .tool-box{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .input{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
