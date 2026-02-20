@@ -174,7 +174,6 @@ p{
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    transition: border 0.2s linear;
     border: 1px solid var(--border-color);
 }
 
@@ -737,8 +736,8 @@ input:last-child::placeholder{
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .input{
+    /* .input{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
+    } */
 }
