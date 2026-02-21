@@ -10,7 +10,6 @@ function Services(){
                 <i className="fa-solid fa-palette"></i>
             </div>
             <p>Building responsive websites using HTML, CSS, JavaScript, and modern frameworks.</p>
-            <strong>10 PROJECTS</strong>
         </div>
         <div className="service">
             <div className="service-head">
@@ -18,7 +17,6 @@ function Services(){
                 <i className="fa-solid fa-layer-group"></i>
             </div>
             <p>Creating dynamic and interactive web applications using React.</p>
-            <strong>15 PROJECTS</strong>
         </div>
         <div className="service">
             <div className="service-head">
@@ -26,7 +24,6 @@ function Services(){
                 <i className="fa-solid fa-globe"></i>
             </div>
             <p>Designing mobile-friendly layouts using CSS</p>
-            <strong>10 PROJECTS</strong>
         </div>
         <div className="service">
             <div className="service-head">
@@ -34,7 +31,6 @@ function Services(){
                 <i className="fa-solid fa-mobile-screen"></i>
             </div>
             <p>Connecting frontend applications with REST APIs and handling data dynamically.</p>
-            <strong>5 PROJECTS</strong>
         </div>
         <div className="service">
             <div className="service-head">
@@ -42,7 +38,6 @@ function Services(){
                 <i className="fa-solid fa-rocket"></i>
             </div>
             <p>Improving website speed, responsiveness, and user experience.</p>
-            <strong>5 PROJECTS</strong>
         </div>
         </div>
     </div>

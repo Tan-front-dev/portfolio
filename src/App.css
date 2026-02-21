@@ -247,6 +247,7 @@ p{
     text-decoration: none;
     transition: all 0.3s linear;
     cursor: pointer;
+    text-align: center;
 }
 
 .b1{
@@ -355,12 +356,6 @@ p{
 
 .service p{
     margin-bottom: 12px;
-}
-
-.service strong{
-    font-family: var(--primary-font);
-    font-size: 0.7rem;
-    color: var(--dark-text-color);
 }
 
 .services{
@@ -604,7 +599,26 @@ p{
     color: var(--primary-text-color);
 }
 
+input:last-child{
+    font-family: var(--primary-font);
+}
+
 input:last-child::placeholder{
+    font-family: var(--primary-font);
+}
+
+.c-white{
+    color: var(--white-color);
+}
+
+.c-white a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px dotted var(--white-color);
+}
+
+.number{
     font-family: var(--primary-font);
 }
 
@@ -624,6 +638,8 @@ input:last-child::placeholder{
 .vertical-menu{
     display: none;
 }
+
+
 
 
 @media (min-width:768px){
