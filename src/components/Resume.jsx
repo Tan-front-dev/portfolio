@@ -11,7 +11,7 @@ function Resume(){
 
                 <div className="education-box">
                     <span className="e-year">2024 – Present</span>
-                    <h4 className="e-course">B.Sc. (Honours) in Physics – 2nd Year</h4>
+                    <h4 className="e-course">B.Sc. (Honours) in Physics – <span className="number">2</span>nd Year</h4>
                     <p className="e-institute">Course by <strong>Govt. Shah Sultan College</strong></p>
                     {/* <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis dolore laborum minima.</p> */}
                     </div>
