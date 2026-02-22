@@ -1,7 +1,7 @@
 function About(){
 
     return(
-        <div className="about" id="about">
+        <section className="about" id="about">
             <span className="span-box"><i className="fa-solid fa-star"></i> About</span>
             <h1>Transforming Complexity into Effortless Design</h1>
             <p className="about-para">
@@ -12,7 +12,7 @@ function About(){
                 I have completed JavaScript and React development courses and solved over 100 programming problems to strengthen my logical thinking and coding skills. I am continuously learning and improving to become a professional software engineer.
             </p>
             <button className="btn b1">Contact Me</button>
-        </div>
+        </section>
     )
 }
 

@@ -1,6 +1,6 @@
 function Services(){
     return(
-    <div className="services" id="services">
+    <section className="services" id="services">
         <span className="span-box"><i className="fa-solid fa-star"></i> Services</span>
         <h1>Building with purpose & Precision</h1>
         <div className="service-demo">
@@ -40,7 +40,7 @@ function Services(){
             <p>Improving website speed, responsiveness, and user experience.</p>
         </div>
         </div>
-    </div>
+    </section>
     )
 }
 

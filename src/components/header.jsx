@@ -50,7 +50,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="parent-header" id="home">
+    <section className="parent-header" id="home">
       <div className="menu-logo" onClick={openMenu}>
         <i className="fa-solid fa-bars"></i>
       </div>
@@ -173,7 +173,7 @@ function Header() {
           </button>
         )}
       </div>
-    </header>
+    </section>
   );
 }
 

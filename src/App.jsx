@@ -8,7 +8,7 @@ import Resume from './components/Resume.jsx'
 import Tool from './components/Tool.jsx'
 import Reviews from './components/Reviews.jsx'
 import Contact from './components/Contact.jsx'
-import VerticalMenu from './components/VerticalMenu.jsx'
+import Vertical from './components/Vertical.jsx'
 
 function App() {
   return(
@@ -28,7 +28,7 @@ function App() {
     <Contact/>
     </div>
     <div>
-    <VerticalMenu/>
+    <Vertical/>
     </div>
     </div>
     </>

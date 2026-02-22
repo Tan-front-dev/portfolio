@@ -30,7 +30,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact" id="contact">
+    <section className="contact" id="contact">
       <span className="span-box">
         <i className="fa-solid fa-star"></i> Contact
       </span>
@@ -72,7 +72,7 @@ function Contact() {
           style={{
             marginTop: "15px",
             fontWeight: "500",
-            color: isSuccess ? "green" : "red",
+            color: isSuccess ? "rgb(0, 212, 35)" : "red",
           }}
         >
           {status}
@@ -88,7 +88,7 @@ function Contact() {
           <a href="mailto:ertazatanbir@gmail.com" className="email-link">ertazatanbir@gmail.com</a>
         </p>
       </div>
-    </div>
+    </section>
   )
 }
 

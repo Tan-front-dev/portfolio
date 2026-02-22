@@ -286,41 +286,67 @@ p{
     letter-spacing: 1px;
 }
 
+
 .projects h1{
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
 }
 
-.projects-demo{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.project-demo{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
 }
 
 .project img{
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.project{
-    position: relative;
+.project h3{
+    margin-top: 15px;
 }
 
-.project-detail{
-    position: absolute;
-    bottom: 16px;
-    left: 8px;
+
+.buttons{
+    margin: 15px 0;
+    display: flex;
+    gap: 15px;
 }
 
-.detail{
-    font-size: 13px;
+
+.tech-stack{
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.tech-stack span{
     background: var(--black-color);
-    margin-right: 8px;
-    padding: 5px 10px;
+    color: var(--white-color);
+    border: 1px solid var(--border-color);
+    padding: 4px 8px;
     border-radius: 5px;
+    font-size: 0.9rem;
 }
+
+.feature li{
+    list-style: none;
+    font-size: 0.95rem;
+}
+
+.feature li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.feature li span{
+    color: var(--icon-color);
+    margin-right: 5px;
+}
+
 
 .about{
-    margin: 5rem 0;
+    margin: 4.5rem 0;
 }
 
 .about h1{
@@ -612,10 +638,9 @@ input:last-child::placeholder{
 }
 
 .c-white a{
-    color: var(--white-color);
+    color: var(--icon-color);
     text-decoration: none;
-    font-weight: bold;
-    border-bottom: 1px dotted var(--white-color);
+    
 }
 
 .number{
@@ -718,18 +743,16 @@ input:last-child::placeholder{
         color: var(--white-color);
     }
 
+    .project-demo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .top-btn{
         display: none;
     }
 
     .main{
         margin-left: 18rem;
-    }
-
-    .projects-demo{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
     }
 
     .service-demo{

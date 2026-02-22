@@ -1,7 +1,7 @@
 function Resume(){
     
     return(
-        <div className="resume" id="resume">
+        <section className="resume" id="resume">
             <span className="span-box"><i className="fa-solid fa-star"></i> Resume</span>
             <h1>Education And Practical Experience</h1>
             <p>I am a self-motivated developer currently pursuing a B.Sc. (Honours) in Physics while actively building my skills in modern web development.</p>
@@ -47,7 +47,7 @@ function Resume(){
                     </div> */}
                     </div>
              </div>
-        </div>
+        </section>
     )
 }
 
