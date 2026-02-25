@@ -2,7 +2,7 @@ import css from "../assets/css3.svg"
 import html from "../assets/html.svg"
 import git from "../assets/git.svg"
 import github from "../assets/github.svg"
-import netlify from "../assets/netlify.svg"
+import vite from "../assets/vite.svg"
 import devtools from "../assets/devtools.svg"
 import react from "../assets/react.svg"
 import javascript from "../assets/javascript.svg"
@@ -38,8 +38,8 @@ function Tool(){
                 <span>Github</span>
             </div>
             <div className="tool">
-                <img src={netlify}/>
-                <span>Netlify</span>
+                <img src={vite}/>
+                <span>Vite</span>
             </div>
             <div className="tool">
                 <img src={devtools}/>
