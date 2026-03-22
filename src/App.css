@@ -3,6 +3,8 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
 :root{
     --border-color: rgb(50, 50, 50);
     --main-font: "Syne", sans-serif;
